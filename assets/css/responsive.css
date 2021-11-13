@@ -1,0 +1,93 @@
+@media (max-width:740px){
+    #header{
+        height: 45.4px;
+        background-color: black;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #nav > li {
+        display: block;
+    }
+    #header .search-btn {
+       display: none;
+    }
+    #header .mobie-button{
+        float: right;
+        padding: 0 21px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #header .mobie-button:hover{
+        background-color: #ccc;
+    }
+    #header .mobie-button:hover .menu-icon{
+        color: black;
+    }
+    #header .menu-icon{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46.4px;
+    }
+    #header .mobie-button {
+        display: initial
+    }
+    #nav {
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 5px 41px;
+    }
+    #content .member-item{
+        width: 100%;
+    }
+    #content .member-img{
+        margin-top: 5px;
+        width: 65%;
+        border-radius:40px;
+    }
+    #content .about-paragraph{
+        letter-spacing: -1px;
+    }
+    .places-item{
+        margin-top: 16px;
+        width: 100%;
+    }
+    .places-list{
+        padding-bottom: initial;
+    }
+    .all-info{
+        display: initial;
+    }
+    .text-info{
+        width: 100%;
+    }
+    .myaddress{
+        width: 100%;
+    }
+    .send-info{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .text-info.email{
+        margin: 15px 0;
+    }
+    .place-buy{
+        width: 100%;
+    }
+    .button-send{
+        width:100%;
+    }
+}

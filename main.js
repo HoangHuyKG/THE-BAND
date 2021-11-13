@@ -47,3 +47,27 @@ GetButtonSend.addEventListener('click', function(){
                 GetModalSuccess.classList.remove('open')        
         }, 2000);
 })
+// button menu
+const GetHeader = document.getElementById('header')
+const mobileMenu = document.querySelector('.mobie-button')
+var headerHeight = GetHeader.clientHeight
+mobileMenu.onclick = function(){
+        var isClosed = GetHeader.clientHeight === headerHeight
+        if(isClosed){
+                GetHeader.style.height = 'auto'
+        }else {
+                GetHeader.style.height = null
+        }
+}
+// auto close menu
+const menuIteams = document.querySelectorAll('#header #nav a')
+for(item of menuIteams){
+        item.addEventListener('click', function(event){
+                var notMore = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+                if(!notMore){
+                        GetHeader.style.height = null
+                }else{
+                        event.preventDefault();
+                }
+        })
+}
